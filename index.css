@@ -1,18 +1,20 @@
 body {
-    width: fit-content;
+    width: 600px;
     height: 100pc;
     margin:auto;
+    align-content: center;
     background: white;
     font-family: Arial, Helvetica, sans-serif;
-    
+
     
 }
 
 .rectangle {
     height: 2px;
-    width: 200px;
+    width: 250px;
     background-color: black;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 h1 {
@@ -20,6 +22,7 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
+    font-weight:bolder;
 
 }
 
@@ -30,15 +33,71 @@ h2 {
 }
 
 button {
-    background-color: black;
+    background: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
-    width: 100px;
-    color: white;
-    border: 1px solid white;
-    border-radius: 10px;
+    border: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+button.colorfulBtn {
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 10px;
+    background: white;
+    color: black;
+    border: 2px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-weight: bolder;
+    
+    
+}
+
+button.colorfulBtn:hover {
+    background: -webkit-linear-gradient(100deg, #ED4683 0%, #F48E14 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .socials-icons {
     margin-top: 15px;
     width: 30px;
+}
+
+
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: black;
+    color: black;
+    padding-right: 10px;
+}
+
+a:hover, a.active {
+    background: -webkit-linear-gradient(100deg, #ED4683 0%, #F48E14 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.typNumb {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#calcOutputs {
+    font-size: 14px;
+    font-weight: bold;
 }

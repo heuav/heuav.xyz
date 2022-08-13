@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position Calculator</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"> </script>
+        <script src="autoNumeric-(with latest version).js" type=text/javascript> </script>
+    </head>
+    <body>
+        <div class="header-el">
+            <h1>Heuav.eth</h1>
+            <div class="rectangle"></div>
+            <div class="navbar">
+                <a class="navlinks" href="index.html">Home</a>
+                <a class="active" href="positionCalculator.html">Trade Calculator</a>
+            </div>
+        </div>
+        <div class="rectangle"></div>
+        <p1>Use this tool to help you identify position sizing and leverage</p1>
+        <div class="positionCalculator">
+            <div id="calcInputs">
+                <h1 class="subHeading">Inputs</h1>
+                    <!--
+                    <button class="colorfulBtn" id="btn-long">Long</button>
+                    <button class="colorfulBtn" id="btn-short">Short</button><br>
+                    -->
+                    <!--
+                    <div id="LongShortBlock">
+                        <button class="colorfulBtn" id="btn-getETH">Market Buy ETH</button>
+                        <button class="colorfulBtn" id="btn-getBTC">Market Buy BTC</button>
+                    </div>
+                    -->
+                    <label for="stackSize-el" class="typNumb">Stack Size</label>
+                    <input class="typNumb" id="stackSize-el" type="text" placeholder="$$$">
+                    <br>
+                    <label for="maxLossPct-el" class="typNumb">Maximum Risk %</label>
+                    <input class="typNumb" id="maxLossPct-el" type="number" placeholder="%">
+                    <br>
+                    <label for="entryPrice-el" class="typNumb">Entry Price</label>
+                    <input class="typNumb" id="entryPrice-el" type="number" placeholder="$$$">
+                    <br>
+                    <label for="stopPrice-el" class="typNumb">Stop Price</label>
+                    <input class="typNumb" id="stopPrice-el" type="number" placeholder="$$$">
+                    <br>
+                    <label for="takeProfit-el" class="typNumb">Take Profit Price</label>
+                    <input class="typNumb" id="takeProfit-el" type="number" placeholder="$$$">
+                    <br>
+                    <label for="lev-el" class="typNumb">Leverage Used</label>
+                    <input id="lev-el" class="typNumb" placeholder="xx">
+            </div>
+            <div id="calcOutputs">
+                <h1 class="subHeading">Outputs</h1>
+                    <h2 id="positionSize-el" class="typNumb"></h2>
+                    <h2 id="maxLoss-el" class="typNumb"></h2>
+                    <h2 id="targetGain-el" class="typNumb"></h2>
+                    <h2 id="roi-el" class="typNumb"></h2>
+                    <h2 id="reqPriceMove-el" class="typNumb"></h2>
+                    <h2 id="tp-el" class="typNumb"></h2>
+                    <h2 id="rr-el" class="typNumb"></h2> 
+                    <button class="colorfulBtn" id="calculate-btn" onclick="calculatePosition()">Calculate</button>     
+            </div>
+        </div>
+        <script src="posCalc.js"></script>
+    </body>
+</html>
