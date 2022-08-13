@@ -1,11 +1,4 @@
 
-
-
-jQuery(function($) {
-     $('#stackSize-el').autoNumeric('init');    
-});
-
-
 //Input UI Elements
 let stackSizeEl = document.getElementById("stackSize-el")
 let maxLossPctEl = document.getElementById("maxLossPct-el")
