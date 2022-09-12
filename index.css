@@ -100,4 +100,13 @@ a:hover, a.active {
 #calcOutputs {
     font-size: 14px;
     font-weight: bold;
+    
+}
+
+
+
+input, select, textarea{
+    background: -webkit-linear-gradient(100deg, #ED4683 0%, #F48E14 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

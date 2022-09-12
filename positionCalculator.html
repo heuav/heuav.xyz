@@ -14,7 +14,8 @@
             </div>
         </div>
         <div class="rectangle"></div>
-        <p1>Use this tool to help you identify position sizing and leverage</p1>
+        <p1><strong>Use this tool to help you identify position sizing and leverage</strong></p1>
+        <br><p1>For informational purposes only. Use at your own discretion. </p1>
         <div class="positionCalculator">
             <div id="calcInputs">
                 <h1 class="subHeading">Inputs</h1>
@@ -28,28 +29,30 @@
                         <button class="colorfulBtn" id="btn-getBTC">Market Buy BTC</button>
                     </div>
                     -->
-                    <label for="stackSize-el" class="typNumb">Stack Size</label>
+                    <label for="stackSize-el" class="typNumb">Stack Size:</label>
                     <input class="typNumb" id="stackSize-el" type="text" placeholder="$$$">
                     <br>
-                    <label for="maxLossPct-el" class="typNumb">Maximum Risk %</label>
+                    <label for="maxLossPct-el" class="typNumb">Maximum Risk %:</label>
                     <input class="typNumb" id="maxLossPct-el" type="number" placeholder="%">
                     <br>
-                    <label for="entryPrice-el" class="typNumb">Entry Price</label>
+                    <label for="entryPrice-el" class="typNumb">Entry Price:</label>
                     <input class="typNumb" id="entryPrice-el" type="number" placeholder="$$$">
                     <br>
-                    <label for="stopPrice-el" class="typNumb">Stop Price</label>
+                    <label for="stopPrice-el" class="typNumb">Stop Price:</label>
                     <input class="typNumb" id="stopPrice-el" type="number" placeholder="$$$">
                     <br>
-                    <label for="takeProfit-el" class="typNumb">Take Profit Price</label>
+                    <label for="takeProfit-el" class="typNumb">Take Profit Price:</label>
                     <input class="typNumb" id="takeProfit-el" type="number" placeholder="$$$">
                     <br>
-                    <label for="lev-el" class="typNumb">Leverage Used</label>
+                    <label for="lev-el" class="typNumb">Leverage Used:</label>
                     <input id="lev-el" class="typNumb" placeholder="xx">
             </div>
             <div id="calcOutputs">
                 <h1 class="subHeading">Outputs</h1>
                     <h2 id="positionSize-el" class="typNumb"></h2>
+                    <h2 id="contractSize-el" class="typNumb"></h2>
                     <h2 id="maxLoss-el" class="typNumb"></h2>
+                    <h2 id="liqPrice-el" class="typNumb"></h2>
                     <h2 id="targetGain-el" class="typNumb"></h2>
                     <h2 id="roi-el" class="typNumb"></h2>
                     <h2 id="reqPriceMove-el" class="typNumb"></h2>
